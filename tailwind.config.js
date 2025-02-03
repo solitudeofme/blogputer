@@ -8,6 +8,13 @@ module.exports = {
         center: true,
         padding: "1rem",
       },
+      colors: {
+        "light-secondary": "#C1C2C1",
+      },
+      fontFamily: {
+        silkscreen: "Silkscreen Regular",
+        silkscreenBold: "Silkscreen Bold",
+      },
     },
     screens: {
       xs: "480px",
