@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogputer</title>
+    <link rel="icon" href="images/fav.ico" type="image/png" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <script type="text/javascript">
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+      );
+    </script>
+  </head>
+  <body class="bg-neutral-400"></body>
+</html>
+<div class=""></div>
