@@ -8,12 +8,12 @@ module.exports = {
         center: true,
         padding: "1rem",
       },
-      colors: {
-        "light-secondary": "#C1C2C1",
-      },
       fontFamily: {
-        silkscreen: "Silkscreen Regular",
-        silkscreenBold: "Silkscreen Bold",
+        w95fa: "w95fa Regular",
+      },
+      cursor: {
+        custom: "url('../images/maincursor.png'), auto",
+        customPointer: "url('../images/pointercursor.png'), pointer",
       },
     },
     screens: {

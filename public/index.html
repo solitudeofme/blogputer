@@ -21,7 +21,9 @@
       );
     </script>
   </head>
-  <body class="bg-white dark:bg-black dark:text-white pt-[61px]">
+  <body
+    class="bg-white dark:bg-black dark:text-white pt-[61px] cursor-custom selection:bg-black selection:text-white selection:dark:bg-white selection:dark:text-black"
+  >
     <svg class="hidden">
       <symbol
         id="sun"
@@ -48,14 +50,16 @@
     </svg>
     <!-- App Header -->
     <header
-      class="fixed inset-0 w-full h-16 px-5 bg-light-secondary dark:bg-gray-600 border-b-4 border-black dark:border-white font-bold tracking-tighter text-2xl flex items-center"
+      class="fixed inset-0 w-full h-16 px-5 bg-zinc-400 dark:bg-zinc-500 border-b-4 border-black dark:border-white font-bold silkscreen-font tracking-tighter text-2xl flex items-center"
     >
       <nav class="flex items-center w-full gap-x-14 justify-between">
         <div class="flex gap-x-14">
           <div class="w-24 h-24 flex items-center">
-            <img src="images/Screenshot_20250203_155830_Telegram.png" alt="" />
+            <img src="images/fav.ico" alt="" />
           </div>
-          <div class="flex items-center gap-10">
+          <div
+            class="flex items-center md:hidden gap-10 child:cursor-customPointer"
+          >
             <a href="#">Blog</a>
             <a href="#">Find me</a>
             <a href="#">Projects</a>
@@ -72,33 +76,88 @@
         </div>
       </nav>
     </header>
+    <!-- App Main -->
     <main class="h-[calc(100vh-61px)] overflow-y-scroll custom-scrollbar">
-      <div class="min-h-52 w-full">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-        fuga dolore cupiditate laboriosam eum impedit quo debitis, est nihil
-        exercitationem magni nobis aut! Ad iure nesciunt unde error quam porro?
-      </div>
-      <div class="min-h-52 w-full">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-        fuga dolore cupiditate laboriosam eum impedit quo debitis, est nihil
-        exercitationem magni nobis aut! Ad iure nesciunt unde error quam porro?
-      </div>
-      <div class="min-h-52 w-full">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-        fuga dolore cupiditate laboriosam eum impedit quo debitis, est nihil
-        exercitationem magni nobis aut! Ad iure nesciunt unde error quam porro?
-      </div>
-      <div class="min-h-52 w-full">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-        fuga dolore cupiditate laboriosam eum impedit quo debitis, est nihil
-        exercitationem magni nobis aut! Ad iure nesciunt unde error quam porro?
-      </div>
-      <div class="min-h-52 w-full"></div>
-      <div class="min-h-52 w-full"></div>
-      <div class="min-h-52 w-full"></div>
-      <div class="min-h-52 w-full"></div>
-      <div class="min-h-52 w-full"></div>
-      <div class="min-h-52 w-full"></div>
+      <section class="home">
+        <div
+          class="container flex flex-col lg:flex-row items-center gap-10 mt-16"
+        >
+          <!-- Introduction -->
+          <div class="space-y-11">
+            <h1
+              class="text-5xl md:text-[70px]/[70px] w-[200px] md:w-[480px] gap-2 silkscreen-font tracking-tighter text-white child:bg-black dark:text-black child:p-2 child:dark:bg-white flex flex-wrap"
+            >
+              <span>Hi</span>
+              <span>I'm</span>
+              <span>Bahman</span>
+              <span>!</span>
+            </h1>
+            <div class="font-w95fa text-xl space-y-7">
+              <p class="">
+                <span class="font-bold text-2xl"
+                  >Hey there, curious traveler of the internet!</span
+                >
+                You’ve just stumbled upon Bahman’s corner of the web, where
+                stories unfold, memories take shape, and the little quirks of
+                life get the spotlight they deserve.
+              </p>
+              <p>
+                By day, Bahman wrangles databases and tames unruly APIs. By
+                night, he’s a proud cat enthusiast, a devoted Radiohead fan, and
+                a storyteller at heart—sharing moments, musings, and the
+                occasional existential crisis over whether his cat secretly runs
+                the house (spoiler: it does). Here, you’ll find tales of
+                everyday adventures, reflections on life, and thoughts that keep
+                him up at night. So grab a tea, get comfortable, and step into
+                Bahman’s world—where the best stories are the ones we live.
+              </p>
+              <p>
+                P.S. If you spot a typo, let’s just call it “artistic
+                expression.”
+              </p>
+            </div>
+          </div>
+          <!-- Home section Bg -->
+          <div
+            class="w-[300px] md:w-[550px] lg:w-[420px] xl:w-[550px] shrink-0"
+          >
+            <img src="images/main-bg.jpg" alt="" />
+            <!-- <video autoplay loop muted playsinline>
+              <source
+                src="images/video_2025-02-04_00-33-58.mp4"
+                type="video/mp4"
+              />
+            </video> -->
+          </div>
+        </div>
+      </section>
+      <section
+        class="pinned-blogs border-t-4 mt-24 py-12 border-black dark:border-white bg-zinc-200 dark:bg-neutral-800 min-h-[600px]"
+      >
+        <div class="container">
+          <!-- Section Title -->
+          <h2 class="section-title text-4xl silkscreen-font tracking-tighter">
+            Pinned Blogs
+          </h2>
+        </div>
+      </section>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
+      <div class="min-h-96"></div>
     </main>
   </body>
   <script src="scripts/script.js"></script>
