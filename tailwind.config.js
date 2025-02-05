@@ -12,7 +12,7 @@ module.exports = {
         w95fa: "w95fa Regular",
       },
       cursor: {
-        custom: "url('../images/maincursor.png'), auto",
+        custom: "url('../images/bahmanCursor.png'), auto",
         customPointer: "url('../images/pointercursor.png'), pointer",
       },
     },
