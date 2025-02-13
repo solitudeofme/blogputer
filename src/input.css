@@ -21,7 +21,7 @@
 }
 @layer components {
   .custom-scrollbar::-webkit-scrollbar {
-    width: 20px;
+    width: 18px;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb {
     border: 4px solid black;
@@ -31,7 +31,7 @@
     @apply bg-indigo-300;
   }
   .dark .custom-scrollbar::-webkit-scrollbar {
-    width: 20px;
+    width: 18px;
   }
   .dark .custom-scrollbar::-webkit-scrollbar-thumb {
     border: 4px solid white;
@@ -45,5 +45,12 @@
 @layer utilities {
   .silkscreen-font {
     font-family: "Silkscreen", serif;
+    @apply tracking-tighter;
+  }
+  .pinned-blogs {
+    background-image: url("../images/bg-section-light.png");
+  }
+  .dark .pinned-blogs {
+    background-image: url("../images/bg-section-dark.png");
   }
 }

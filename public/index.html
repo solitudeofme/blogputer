@@ -64,7 +64,7 @@
     </svg>
     <!-- App Header -->
     <header
-      class="fixed inset-0 w-full h-16 px-5 bg-zinc-400 dark:bg-zinc-500 border-b-4 border-black dark:border-white font-bold silkscreen-font tracking-tighter text-2xl flex items-center"
+      class="fixed inset-0 w-full h-16 px-5 bg-zinc-400 dark:bg-zinc-500 border-b-4 border-black dark:border-white font-bold silkscreen-font text-2xl flex items-center"
     >
       <nav class="flex items-center w-full justify-between">
         <div class="flex gap-x-24">
@@ -124,7 +124,7 @@
           <!-- Introduction -->
           <div class="space-y-11">
             <h1
-              class="text-5xl md:text-[70px]/[70px] w-[300px] md:w-[480px] gap-2 silkscreen-font tracking-tighter text-white child:bg-black dark:text-black child:p-2 child:dark:bg-white flex flex-wrap"
+              class="text-5xl md:text-[70px]/[70px] w-[300px] md:w-[480px] gap-2 silkscreen-font text-white child:bg-black dark:text-black child:p-2 child:dark:bg-white flex flex-wrap"
             >
               <span>Hi</span>
               <span>I'm</span>
@@ -169,18 +169,19 @@
         </div>
       </section>
       <section
-        class="pinned-blogs border-t-4 mt-24 py-12 border-black dark:border-white min-h-[600px] bg-zinc-200 dark:bg-zinc-900"
+        class="pinned-blogs border-t-4 mt-24 py-12 border-black dark:border-white min-h-[600px] bg-[length:80%] sm:bg-[length:50%] bg-zinc-200 dark:bg-zinc-900"
       >
         <div class="container">
-          <!-- Section Title -->
-          <h2 class="section-title text-4xl silkscreen-font tracking-tighter">
-            Pinned Blogs
-          </h2>
-          <div class="w-96 inline-block">
-            <img src="images/cat-com.jfif" alt="" />
-          </div>
-          <div class="w-96 grayscale inline-block">
-            <img src="images/cat-com.jfif" alt="" />
+          <!-- Section Header -->
+          <div class="flex justify-between items-center">
+            <h2 class="section-title text-4xl silkscreen-font tracking-tighter">
+              Blogs
+            </h2>
+            <a href="#" class="flex gap-1 items-center silkscreen-font text-2xl"
+              >All Blogs
+              <svg class="w-6 h-6 flex text-black dark:text-white">
+                <use href="#chevron-right"></use></svg
+            ></a>
           </div>
         </div>
       </section>
