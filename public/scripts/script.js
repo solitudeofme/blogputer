@@ -3,6 +3,9 @@ const themeToggleBtns = document.querySelectorAll(".theme-toggle-btn");
 const navBarBtn = document.querySelector(".nav-bar-btn");
 const overlayMenu = document.querySelector(".overlay-menu");
 const overlay = document.querySelector(".overlay");
+const autoDir = document.querySelectorAll(".auto-dir");
+
+// Functions
 
 navBarBtn.addEventListener("click", () => {
   overlay.classList.toggle("hidden");

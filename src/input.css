@@ -54,10 +54,10 @@
 
 @layer utilities {
   .custom-btn-shadow {
-    box-shadow: white 5px 5px 0px -3px, black 5px 5px;
+    box-shadow: white 4px 4px 0px -2px, black 4px 4px;
   }
   .dark .custom-btn-shadow {
-    box-shadow: black 5px 5px 0px -3px, white 5px 5px;
+    box-shadow: black 4px 4px 0px -2px, white 4px 4px;
   }
 
   .custom-dir {
