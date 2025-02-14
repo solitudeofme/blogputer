@@ -18,6 +18,16 @@
     font-display: swap;
     src: url("../fonts/w95fa/w95fa.woff2") format("woff2");
   }
+  @font-face {
+    font-family: "SD-Studio Bold";
+    font-display: swap;
+    src: url("../fonts/SD-Studio/SD-Studio-Bold.ttf") format("truetype"),
+      url("../fonts/SD-Studio/SD-Studio-Bold.eot") format("embedded-opentype");
+  }
+  .silkscreen-font {
+    font-family: "Silkscreen", serif;
+    @apply tracking-tighter;
+  }
 }
 @layer components {
   .custom-scrollbar::-webkit-scrollbar {
@@ -43,14 +53,29 @@
 }
 
 @layer utilities {
-  .silkscreen-font {
-    font-family: "Silkscreen", serif;
-    @apply tracking-tighter;
+  .custom-btn-shadow {
+    box-shadow: white 5px 5px 0px -3px, black 5px 5px;
+  }
+  .dark .custom-btn-shadow {
+    box-shadow: black 5px 5px 0px -3px, white 5px 5px;
+  }
+
+  .custom-dir {
+    direction: rtl;
   }
   .pinned-blogs {
     background-image: url("../images/bg-section-light.png");
   }
   .dark .pinned-blogs {
     background-image: url("../images/bg-section-dark.png");
+  }
+  .post-shadow {
+    box-shadow: 6px 6px 0 0 black;
+  }
+  .dark .post-shadow {
+    box-shadow: 6px 6px 0 0 white;
+  }
+  .post-border-b {
+    @apply border-b-[3px] border-black dark:border-white;
   }
 }

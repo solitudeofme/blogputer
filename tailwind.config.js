@@ -10,6 +10,7 @@ module.exports = {
       },
       fontFamily: {
         w95fa: "w95fa Regular",
+        "sd-studio": "SD-Studio Bold",
       },
       cursor: {
         custom: "url('../images/bahmanCursor.png'), auto",
